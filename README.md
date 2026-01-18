@@ -1,6 +1,6 @@
 # DIPLOMATIC ENJOY
 
-**Leftfield Electronic Music & Audio Research**
+** Electronic Music & Audio Research**
 
 ![Project Status](https://img.shields.io/badge/Status-Production-success)
 ![Tech Stack](https://img.shields.io/badge/Stack-Next.js_14_%7C_TypeScript_%7C_AWS-blue)
