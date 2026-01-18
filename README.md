@@ -19,7 +19,13 @@
 
 ---
 
-## 🏗 Architecture
+
+## Podcast delivery Architecture
+
+![Podcast Delivery architecture diagram](./public/images/PodcastSite_dark.png)
+
+
+## 🏗 App Architecture
 
 This project moves away from traditional CMS databases, instead treating **RSS Feeds as the Source of Truth**. The site is statically generated (`SSG`) at build time, ensuring 0ms server latency and 100% cache-hit ratios on CloudFront.
 
@@ -154,14 +160,26 @@ aws s3 sync out/ s3://your-hosting-bucket --delete
 
 ├── app/
 │   ├── layout.tsx       # Global wrappers (The Deck, NavBar, Analytics)
+
 │   ├── page.tsx         # Home (Funk Feed)
+
 │   ├── house/           # House Feed
+
 │   ├── techno/          # Techno Feed
+
 │   └── downloads/       # The Vault (Remixes)
+
 ├── components/          # React Components (FeedItem, ArchiveRow)
+
 ├── lib/
+
 │   ├── rss.ts           # The XML Parsing Engine
+
 │   └── data.ts          # Static Data & CloudFront Config
+
 └── public/
+
     ├── images/          # Episode Artwork
+
     └── rss/             # Local XML Feeds (Source of Truth)
+
