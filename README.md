@@ -83,6 +83,7 @@ graph TD
     style CF_Web fill:#ff9900,color:black
     style CF_Vault fill:#ff9900,color:black
     style Podtrac fill:#00C7B7,color:white
+```
 
 ## ⚡ Key Features
 
