@@ -130,7 +130,7 @@ A dedicated "Downloads" section for DJs.
 - MP3 assets located in `public/images` or S3
 
 ### Local Development
-```bash
+
 # 1. Install dependencies
 npm install
 
