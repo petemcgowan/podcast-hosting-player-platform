@@ -40,3 +40,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 audio-visual-site.code-workspace
+podcast-hosting-player-platform.code-workspace
