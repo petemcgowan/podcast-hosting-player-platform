@@ -4,9 +4,8 @@ import SubscribeBar from '@/components/SubscribeBar'
 import { PLATFORMS } from '@/lib/data'
 
 export const metadata = {
-  title: 'Funk', // Becomes "Funk | Diplomatic Enjoy"
+  title: 'Funk',
   description: 'Rare Groove, 70s Soul, and Hip Hop beats. Digging in the crates.',
-  // It inherits the OpenGraph image from layout automatically
 }
 export default async function Home() {
   const allMixed = await getMixedEpisodes()
@@ -35,7 +34,7 @@ export default async function Home() {
         </div>
       </div>
 
-      {/* THE BENTO GRID LAYOUT */}
+      {/*  Bento Grid Layout */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-12">
         {funkEpisodes.map((ep) => (
           <FeedItem key={ep.id} episode={ep} />

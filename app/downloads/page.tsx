@@ -1,15 +1,11 @@
 import { REMIXES } from '@/lib/data'
 import ArchiveRow from '@/components/ArchiveRow'
 
-// Placeholder for your original productions (House/Techno)
-// You can paste your iframe HTML strings here later
 const ORIGINALS = [
   {
     title: "Original Techno Productions",
-    // Example: Replace this string with your real Spotify embed URL
     embedUrl: "https://open.spotify.com/embed/artist/0hFzAYqKLJFEBp5jd8RhmK?utm_source=generator&theme=0"
   },
-  // Add another object here if you have a specific Soundcloud playlist embed
 ]
 
 export const metadata = {
@@ -32,7 +28,7 @@ export default function DownloadsPage() {
         </p>
       </div>
 
-      {/* SECTION 1: FUNK & DISCO EDITS (The List) */}
+      {/* Section 1: FUNK & DISCO EDITS (The List) */}
       <div className="max-w-4xl mx-auto mb-32">
         <h2 className="text-sm font-mono text-red-500 mb-8 tracking-[0.2em] border-l-2 border-red-500 pl-4">
           01 // FUNK & BREAKS EDITS
@@ -42,19 +38,19 @@ export default function DownloadsPage() {
           {REMIXES.map((track, index) => (
           <ArchiveRow
   key={track.id}
-  id={track.id} // <--- Added ID prop
+  id={track.id}
   index={index}
   artist={track.artist}
   song={track.song}
   link={track.link}
-  audioUrl={(track as any).audioUrl} // <--- Pass the direct MP3 link if you add it later
+  audioUrl={(track as any).audioUrl}
   image={track.image}
 />
           ))}
         </div>
       </div>
 
-      {/* SECTION 2: ORIGINAL PRODUCTIONS (Embeds) */}
+      {/* Seciton 2: ORIGINAL PRODUCTIONS (Embeds) */}
       <div className="max-w-4xl mx-auto">
         <h2 className="text-sm font-mono text-cyan-500 mb-8 tracking-[0.2em] border-l-2 border-cyan-500 pl-4">
           02 // ORIGINAL PRODUCTIONS

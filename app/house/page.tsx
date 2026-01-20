@@ -11,8 +11,6 @@ export const metadata = {
 export default async function HousePage() {
   const allMixed = await getMixedEpisodes()
 
-  // LOGIC: Filter for House episodes.
-  // We exclude Techno duplicates here to keep the "Vibe" pure.
   const houseEpisodes = allMixed.filter(ep =>
     (ep.genre === 'House' && !ep.title.includes('Techno')) ||
     ep.title.toLowerCase().includes('beach party') ||
@@ -37,7 +35,7 @@ export default async function HousePage() {
         </div>
       </div>
 
-      {/* THE BENTO GRID LAYOUT */}
+      {/* Bento Grid Layout */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-12">
         {houseEpisodes.map((ep) => (
           <FeedItem key={ep.id} episode={ep} />
