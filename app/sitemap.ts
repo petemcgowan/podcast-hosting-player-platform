@@ -3,7 +3,6 @@ export const dynamic = 'force-static'
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  // Update this to your final production domain
   const baseUrl = 'https://diplomaticenjoy.com'
 
   return [
@@ -27,7 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/downloads`,
-      lastModified: new Date(), // Content changes less often
+      lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
