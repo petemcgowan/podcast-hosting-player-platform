@@ -8,6 +8,8 @@
 	xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
 xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/"
 xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0"
+xmlns:podcast="https://podcastindex.org/namespace/1.0"
+>
 >
 <channel>
 	<title>Underground House, Funk, Techno</title>
